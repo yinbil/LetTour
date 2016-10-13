@@ -80,6 +80,37 @@
 					Click here to other relevant location 
 				</div> </a>
 				<br />
+				
+				<!--<a href="#Camera" data-transition="pop" id="capturePhoto" class="button result color-white">
+				<div style="background: rgb(1, 229, 255);color:white; text-align:center; font-weight:bolder; padding: 40px;box-shadow: 5px 5px 5px grey;">
+					Camera
+					<details>
+						<div>
+							<li>
+								<a href="#Camera" data-transition="pop" id="capturePhoto" class="button result color-white"></a>
+							</li>
+						</div>
+					</details>
+				</div> </a> -->
+
+				<!-- Camera Here -->
+				<div><button id="capturePhoto">CAMERA</button> </div>
+				<div><center><img class ="lazy" style="display: none; height: 100%; width: 100%; " id="smallImage" src=""></center></div>
+
+				<!-- VIDEO -->
+				<div>
+					<video width="100%" controls>
+						<source src="STEVE CROWN YOU ARE GREAT.mp4" type="video/mp4">
+					</video>
+				</div>
+
+				<!-- AUDIO -->
+				<div>
+					<audio>
+						<source src="audio.mp3" type="audio/mpeg">
+					</audio>
+					
+				</div>
 
 
 			</div><!-- /content -->
@@ -92,26 +123,26 @@
 				<a href="index.html" data-role="button" data-icon="refresh" data-iconpos="notext" style="background: white;border: none;">Refresh</a>
 			</div><!-- /header -->
 
-			<div data-role="content" style="text-shadow: none">
+			<div data-role="content" style="text-shadow: slideup">
 					<a href="#cs" data-transition="pop">
 					<div style="background: rgb(1, 229, 255);color:white; text-align:center; font-weight:bolder; padding: 40px;box-shadow: 5px 5px 5px grey;">
 						Computer Science
 					</div> </a>
 					<br/></br/>
 					
-					<a href="#ba" data-transition="pop">
+					<a href="#ba" data-transition="slideup">
 					<div style="background: rgb(1, 229, 255);color:white; text-align:center; font-weight:bolder; padding: 40px;box-shadow: 5px 5px 5px grey;">
 						Business Administration
 					</div> </a>
 					<br/></br>
 					
-					<a href="#mis" data-transition="pop">
+					<a href="#mis" data-transition="slide">
 					<div style="background: rgb(1, 229, 255);color:white; text-align:center; font-weight:bolder; padding: 40px;box-shadow: 5px 5px 5px grey;">
 						Management Information system
 					</div> </a>
 					<br/> <br/>
 					
-					<a href="#eng" data-transition="pop">
+					<a href="#eng" data-transition="flow">
 					<div style="background: rgb(1, 229, 255);color:white; text-align:center; font-weight:bolder; padding: 40px;box-shadow: 5px 5px 5px grey;">
 						 Engineering
 							<select id="filter-menu" data-native-menu="false">
@@ -161,9 +192,13 @@
 					Click here for more
 				</div> </a>
 				<br />
-			
+				
+				<div >
+				<center><img src ="image/CS_Ashesi_2.jpg"/></center>
+				</div>
 			</div><!-- /content -->
-			<center><img src ="image/CS_Ashesi_2.jpg"/></center>
+			
+			
 		</div><!-- /page -->
 		
 		<!-- BA Department -->
@@ -205,9 +240,12 @@
 					Click here for more
 				</div> </a>
 				<br />
-
+				
+				<div> 
+					<center><img src ="image/Ashesi_Header_14.jpg"/></center>
+				</div>
 			</div><!-- /content -->
-				<center><img src ="image/Ashesi_Header_14.jpg"/></center>
+				
 		</div><!-- /page -->
 		
 		<!-- MIS Department -->
@@ -250,9 +288,11 @@
 					Click here for more
 				</div> </a>
 				<br />
-
+				<div>
+					<center><img src ="image/CS_Ashesi_2.jpg"/></center>
+				</div>
 			</div><!-- /content -->
-				<center><img src ="image/CS_Ashesi_2.jpg"/></center>
+				
 		</div><!-- /page -->
 		
 		<!-- Engineering Department -->
@@ -302,9 +342,12 @@
 					Click here for more
 				</div> </a>
 				<br />
+				<div>
+					<center><img src ="image/Engineering_Ashesi.jpg"/></center>
+				</div>
 
 			</div><!-- /content -->
-				<center><img src ="image/Engineering_Ashesi.jpg"/></center>
+				
 		</div><!-- /page -->
 		
 		<!-- Other Locations -->
@@ -521,4 +564,5 @@
 			.textinput("option", "inset", !placeInDialog).end().prependTo(destination);
 		});
 	</script>
+	<script type="text/javascript" src="scripts/index.js"></script>
 </html>
